@@ -9,7 +9,7 @@ This project configures and deploys an Azure Cosmos DB account using the NoSQL (
 The Core SQL API was selected because it supports rich SQL-like queries against JSON documents, is the most feature-complete Cosmos DB API, and is the recommended starting point for new workloads.
 
 ### Consistency Level: Session
-Session consistency was selected because it guarantees that a user always reads their own writes within a session — the right balance for most application workloads. Strong consistency was not chosen because it limits throughput and increases latency.
+Session consistency was selected because it guarantees that a user always reads their own writes within a session the right balance for most application workloads. Strong consistency was not chosen because it limits throughput and increases latency.
 
 ### Partition Key: /category
 The /category field was chosen as the partition key because it has multiple distinct values (electronics, clothing, books), distributes data evenly across partitions, and is a common query filter.
